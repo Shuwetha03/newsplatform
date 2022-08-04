@@ -1,0 +1,20 @@
+Existing jpa APIs---->
+	
+	All admins                     Get                                http://localhost:8080/api/admins
+      All users                      Get                                http://localhost:8080/api/users
+      All Categories                 Get                                http://localhost:8080/api/categories
+
+
+Required API------->
+
+	Subcategories based on Category Id           get                   
+      Articles based on Sub Category ID            get
+	update comment                               patch
+      delete comment                               delete
+      comments by id                               get
+	likes count display desc                     get
+	Articles based on Keyword(search)            get
+	create users(add & save)                     get & Post
+
+
+        
