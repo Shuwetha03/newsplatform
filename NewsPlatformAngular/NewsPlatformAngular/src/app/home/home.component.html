@@ -1,0 +1,24 @@
+<div><app-nav-bar></app-nav-bar></div>
+<div style="display:flex">
+    <div style="width:22%">
+      <div style="position: sticky;top:20px">
+        <app-menu (onSelectedItem)="onSelectedTag($event)"></app-menu>
+      </div>
+    
+    </div>
+    <div style="width:70%;padding-top: 1rem;" *ngIf="!showArticleDetails">
+
+      <ng-container *ngFor="let article of currrentArticles">
+        <app-news-article-card [newsArticle]="article" (isSelected)="onSelectedArticle(article)" ></app-news-article-card>
+       </ng-container>
+    </div>
+    <div style="width:70%;padding-top: 1rem;" *ngIf="showArticleDetails">
+      <div style="cursor: pointerpointer;" (click)="onclickBack()">
+      <h4 > <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="24" fill="rgb(23, 98, 228);" class="bi bi-arrow-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+        </svg>
+      </span>Back</h4></div>
+      <app-news-article [newsArticle]="selectedArticle" ></app-news-article>
+    </div>
+    </div>

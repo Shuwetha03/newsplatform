@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+     
+        <div class="col-auto"><a routerLink="/admin" class="btn btn-primary">Admin</a></div>
+        <div class="col-sm-3"><a routerLink="" class="btn btn-primary">Home</a></div>
+    
+    </div>
+    <br>
+<div class="row">
+    <h4>Admin Form</h4>
+</div>
+
+<form #pf="ngForm" (ngSubmit)="onSubmit()">
+   
+    &nbsp;
+    <div class="row">
+        <div class="col-sm-3"><label for="">AdminId</label></div>
+        <div class="col-sm-6"><input type="number" name="aid" [(ngModel)]="admin.aid"></div>
+    </div>
+    &nbsp;
+    <div class="row">
+        <div class="col-sm-3"><label for="">Admin name</label></div>
+        <div class="col-sm-6"><input type="text" name="aname" [(ngModel)]="admin.aname"></div>
+    </div>
+    &nbsp;
+    <div class="row">
+        <div class="col-sm-3"><label for="">Email</label></div>
+        <div class="col-sm-6"><input type="email" name="email" [(ngModel)]="admin.email"></div>
+    </div>
+    &nbsp;
+    <div class="row">
+        <div class="col-sm-3"><label for="">Password</label></div>
+        <div class="col-sm-6"><input type="password" name="password" [(ngModel)]="admin.password"></div>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-3"><button type="submit" class="btn btn-success">submit</button></div>
+        
+    </div>
+</form>
+</div>

@@ -1,0 +1,20 @@
+<a routerLink ="/subcategoryForm" class="btn btn-info" type="button" >Add Subcategory</a>
+<table border = "1" align="center">
+    <tr>
+    <th>Subcategory id</th>
+    <th>Subcategory name</th>
+    <th>Category id</th>
+    
+    </tr>
+    <tr *ngFor = "let use of sublist">
+        <td>{{use.sid}}</td>
+        <td>{{use.cname}}</td>
+        <td>{{use.id}}</td>
+        
+        
+        <td>
+            <button type="button" class="btn btn-info" (click)="updatePro(use.sid)">Update</button>
+            <button type="button" class="btn btn-info" (click)="deletePro(use.sid)">Delete</button>
+        </td>
+    </tr>
+</table>

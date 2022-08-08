@@ -1,0 +1,36 @@
+nav{
+    margin-top: 5px;
+
+}
+nav img{
+    width : 200px;
+    height :100px;
+    padding-left: 50px;
+
+}
+nav ul {
+padding-right:50px ;
+
+}
+a{
+color : white;
+}
+.nav-link{
+    color: rgb(252, 250, 252);
+}
+.nav-link:hover{
+    color: rgb(253, 248, 241);
+    background-color: rgb(223, 21, 21);
+    border-radius: 5px;
+}
+
+carousel-item active{
+    padding-right: 400px;;
+}
+.btn{
+    background-color: rgb(236, 96, 15);
+    color: aliceblue;
+}
+a{
+    text-decoration:none;
+}

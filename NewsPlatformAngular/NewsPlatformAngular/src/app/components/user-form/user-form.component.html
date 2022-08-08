@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+     
+        <div class="col-auto"><a routerLink="/user" class="btn btn-primary">User</a></div>
+        <div class="col-sm-3"><a routerLink="" class="btn btn-primary">Home</a></div>
+    
+    </div>
+    <br>
+<div class="row">
+    <h4>User Form</h4>
+</div>
+
+<form #pf="ngForm" (ngSubmit)="onSubmit()">
+   
+    &nbsp;
+    <div class="row">
+        <div class="col-sm-3"><label for="">UserId</label></div>
+        <div class="col-sm-6"><input type="number" name="aid" [(ngModel)]="user.uid"></div>
+    </div>
+    &nbsp;
+    <div class="row">
+        <div class="col-sm-3"><label for="">User name</label></div>
+        <div class="col-sm-6"><input type="text" name="aname" [(ngModel)]="user.name"></div>
+    </div>
+    &nbsp;
+    <div class="row">
+        <div class="col-sm-3"><label for="">Email</label></div>
+        <div class="col-sm-6"><input type="email" name="email" [(ngModel)]="user.email"></div>
+    </div>
+    &nbsp;
+    <div class="row">
+        <div class="col-sm-3"><label for="">Password</label></div>
+        <div class="col-sm-6"><input type="password" name="password" [(ngModel)]="user.password"></div>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-3"><button type="submit" class="btn btn-success">submit</button></div>
+        
+    </div>
+</form>
+</div>

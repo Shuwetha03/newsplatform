@@ -1,0 +1,79 @@
+<nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!--li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style = padding:20px; href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Admin
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item btn "  (click)="adminDetails()"  >Admin List</a></li>
+              <li><a class="dropdown-item" (click)="addAdmin()" >Add Admin</a></li>
+              
+            </ul> </li> -->
+
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style = padding:20px; href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              User
+             </a>
+             <ul class="dropdown-menu">
+               <li><a class="dropdown-item btn "  (click)="userDetails()"  >User List</a></li>
+               <li><a class="dropdown-item" (click)="addUser()" >Add User</a></li>
+               
+             </ul>
+           </li>
+
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style = padding:20px; href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Category
+             </a>
+             <ul class="dropdown-menu">
+               <li><a class="dropdown-item btn "  (click)="categoryDetails()"  >Category List</a></li>
+               <li><a class="dropdown-item" (click)="addCategory()" >Add Category</a></li>
+               
+             </ul>
+           </li>
+
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style = padding:20px; href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Comments
+             </a>
+             <ul class="dropdown-menu">
+               <li><a class="dropdown-item btn "  (click)="commentDetails()"  >Comments List</a></li>
+               <li><a class="dropdown-item" (click)="addComment()" >Add Comments</a></li>
+               
+             </ul>
+           </li>
+
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style = padding:20px; href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Subcategory
+             </a>
+             <ul class="dropdown-menu">
+               <li><a class="dropdown-item btn "  (click)="subCategoryDetails()"  >SubCategory List</a></li>
+               <li><a class="dropdown-item" (click)="addSubCategory()" >Add SubCategory</a></li>
+               
+             </ul>
+           </li>
+
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style = padding:20px; href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Likes
+             </a>
+             <ul class="dropdown-menu">
+               <li><a class="dropdown-item btn "  (click)="likeDetails()"  >Likes List</a></li>
+               <li><a class="dropdown-item" (click)="likesByNid()" >Likes for particular article</a></li>
+            
+             </ul>
+           </li>
+        </ul>
+    </div>
+    
+  </div></nav>
+  <router-outlet></router-outlet>

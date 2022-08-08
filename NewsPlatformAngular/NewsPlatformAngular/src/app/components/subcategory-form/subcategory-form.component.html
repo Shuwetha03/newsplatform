@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row">
+     
+        <div class="col-auto"><a routerLink="/subcategory" class="btn btn-primary">Subcategory</a></div>
+        <div class="col-sm-3"><a routerLink="" class="btn btn-primary">Home</a></div>
+    
+    </div>
+    <br>
+<div class="row">
+    <h4>SubCategory Form</h4>
+</div>
+
+<form #pf="ngForm" (ngSubmit)="onSubmit()">
+   
+    &nbsp;
+    <div class="row">
+        <div class="col-sm-3"><label for="">SubCategoryId</label></div>
+        <div class="col-sm-6"><input type="number" name="sid" [(ngModel)]="subcat.sid"></div>
+    </div>
+    &nbsp;
+    <div class="row">
+        <div class="col-sm-3"><label for="">SubCategory name</label></div>
+        <div class="col-sm-6"><input type="text" name="cname" [(ngModel)]="subcat.cname"></div>
+    </div>
+    &nbsp;
+    <div class="row">
+        <div class="col-sm-3"><label for="">Category Id</label></div>
+        <div class="col-sm-6"><input type="number" name="id" [(ngModel)]="subcat.id"></div>
+    </div>
+    
+    
+    <div class="row">
+        <div class="col-sm-3"><button type="submit" class="btn btn-success">submit</button></div>
+        
+    </div>
+</form>
+</div>

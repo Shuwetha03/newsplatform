@@ -1,0 +1,17 @@
+<a routerLink ="/categoryForm" class="btn btn-info" type="button" >Add Category</a>
+<table border = "1" align="center">
+    <tr>
+    <th>Category id</th>
+    <th>category name</th>
+    
+    </tr>
+    <tr *ngFor = "let adn of categorylist">
+        <td>{{adn.id}}</td>
+        <td>{{adn.name}}</td>
+          
+        <td>
+            <button type="button" class="btn btn-info" (click)="updatePro(adn.id)">Update</button>
+            <button type="button" class="btn btn-info" (click)="deletePro(adn.id)">Delete</button>
+        </td>
+    </tr>
+</table>

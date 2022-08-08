@@ -1,0 +1,22 @@
+<div>
+    <nav class="navbar nav-expand-lg nav-light" style="background-color: rgb(23, 98, 228);" >
+        <a class="navbar-brand" href="#" style="padding-left: 1rem ;font-size: 1.3rem;font-weight: 500;">NewsFeed</a>
+        <div>
+            <ul class="nav-bar nav" id="left" >
+                <li class="nav-item">
+                    <form class="d-flex" style = "padding-right:250px; color: rgb(252, 250, 252);" (submit)="search()"  >
+                        <input type="search" name="search_name" class="form-control col-sm-4" color="rgb(252, 250, 252)" [(ngModel)]="searchKeyWord" placeholder="Search news.."/>
+                        <input class="btn" style="margin-left: 0.3rem;"  type="submit" name="search" value="Search" />
+                    </form>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/login" *ngIf="!isUserLoggedIn" >Login</a>
+                </li>
+                &nbsp; &nbsp;
+                <a (click)="onLogOutClick()" *ngIf="isUserLoggedIn">Logout</a>
+                &nbsp; &nbsp;
+                <a routerLink="createAccount" *ngIf="!isUserLoggedIn" >Create Account</a>
+            </ul>
+        </div>
+    </nav>
+</div>

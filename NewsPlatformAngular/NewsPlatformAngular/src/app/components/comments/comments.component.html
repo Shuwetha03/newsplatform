@@ -1,0 +1,26 @@
+<a routerLink ="/commentForm" class="btn btn-info" type="button" >Add Comment</a>
+<table border = "1" align="center">
+    <tr>
+    <th>comment id</th>
+    <th>Comment</th>
+    <th>User id</th>
+    <th>User name</th>
+    <th>admin id</th>
+    <th>news id</th>
+    
+    </tr>
+    <tr *ngFor = "let adn of commentlist">
+        <td>{{adn.commentid}}</td>
+        <td>{{adn.comment}}</td>
+        <td>{{adn.uid}}</td>
+        <td>{{adn.uname}}</td>
+        <td>{{adn.aid}}</td>
+        <td>{{adn.nid}}</td>
+        
+        
+        <td>
+            <button type="button" class="btn btn-info" (click)="updatePro(adn.commentid)">Update</button>
+            <button type="button" class="btn btn-info" (click)="deletePro(adn.commentid)">Delete</button>
+        </td>
+    </tr>
+</table>

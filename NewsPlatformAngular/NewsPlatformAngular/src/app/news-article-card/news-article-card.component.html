@@ -1,0 +1,33 @@
+<div *ngIf="newsArticle!=undefined" class="news-card shadow p-1 mb-3 bg-white rounded">
+    <div class="image-container">
+       <img src="{{newsArticle.imageUrl}}" alt="title" class="news-image">
+    </div>
+    &nbsp;
+    <div class="news-details" style="position: relative;">
+        <div class="cursor-pointer" style="font-size:1.5rem;font-weight:300">{{newsArticle.title}}</div>
+        <div class="news-author">By: {{newsArticle.author}} <span>{{newsArticle.time}}</span></div>
+        <div class="news-summary">
+            {{newsArticle.summary}}
+        </div> 
+        <div class="card-footer">
+        <div style="display:flex;flex-direction:row;justify-content:flex-end">
+        <div >
+            <span  class="m-2" >{{newsArticle.likes}} Likes</span>
+            <span  class="m-2">
+                <span *ngIf="newsArticle.comments!=undefined">{{newsArticle.comments?.length}}</span>
+                <span *ngIf="newsArticle.comments==undefined">0</span> Comments</span>
+        </div>
+        </div> 
+        <div class="bg-white ">
+            <div class="d-flex flex-row fs-12">
+                <div class="like p-2 cursor cursor-pointer"(click)="onclickLike(newsArticle)" [ngClass]="isLiked||newsArticle.isLiked?'liked':''">
+                    <i class="fa fa-thumbs-o-up ml-1" ></i><span class="m-2">Like</span></div>
+                <div class="like p-2 cursor cursor-pointer">
+                    <i class="fa fa-commenting-o ml-1"></i><span class="m-2" (click)="onclickComment()">Comment</span></div>
+                <div class="like p-2 cursor cursor-pointer" (click)="onClickShare(newsArticle.articleUrl)">
+                    <i class="fa fa-share ml-1"></i><span  class="m-2">Share</span></div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>

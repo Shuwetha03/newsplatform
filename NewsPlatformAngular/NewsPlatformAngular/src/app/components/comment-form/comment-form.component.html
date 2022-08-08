@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row">
+     
+        <div class="col-auto"><a routerLink="/comments" class="btn btn-primary">Comments</a></div>
+        <div class="col-sm-3"><a routerLink="" class="btn btn-primary">Home</a></div>
+    
+    </div>
+    <br>
+<div class="row">
+    <h4>Comment Form</h4>
+</div>
+
+<form #pf="ngForm" (ngSubmit)="onSubmit()">
+   
+    &nbsp;
+    <div class="row">
+        <div class="col-sm-3"><label for="">Comment Id</label></div>
+        <div class="col-sm-6"><input type="number" name="aid" [(ngModel)]="comment.commentid"></div>
+    </div>
+    &nbsp;
+    <div class="row">
+        <div class="col-sm-3"><label for="">Comment</label></div>
+        <div class="col-sm-6"><input type="text" name="aname" [(ngModel)]="comment.comment"></div>
+    </div>
+    &nbsp;
+    <div class="row">
+        <div class="col-sm-3"><label for="">user Id</label></div>
+        <div class="col-sm-6"><input type="number" name="aid" [(ngModel)]="comment.uid"></div>
+    </div>
+    &nbsp;
+    <div class="row">
+        <div class="col-sm-3"><label for="">user name</label></div>
+        <div class="col-sm-6"><input type="text" name="aname" [(ngModel)]="comment.uname"></div>
+    </div>
+    &nbsp;
+    <div class="row">
+        <div class="col-sm-3"><label for="">Admin Id</label></div>
+        <div class="col-sm-6"><input type="number" name="aid" [(ngModel)]="comment.aid"></div>
+    </div>
+    &nbsp;
+    <div class="row">
+        <div class="col-sm-3"><label for="">News Id</label></div>
+        <div class="col-sm-6"><input type="number" name="nid" [(ngModel)]="comment.nid"></div>
+    </div>
+    &nbsp;
+    
+    
+    <div class="row">
+        <div class="col-sm-3"><button type="submit" class="btn btn-success">submit</button></div>
+        
+    </div>
+</form>
+</div>

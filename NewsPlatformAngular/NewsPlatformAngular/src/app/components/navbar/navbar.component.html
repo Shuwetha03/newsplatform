@@ -1,0 +1,68 @@
+<div>
+    <nav class="navbar nav-expand-lg nav-light" style="background-color: rgb(62, 212, 16);" >
+            <div>
+            <ul class="nav-bar nav" id="left" >
+                <li class="nav-item" >
+                    <img src="assets/images/logo.jpeg"class="img-fluid" style="width: 100px; height: 60px; padding-right: 20px; padding-left: 10px; "/>
+                </li>
+                <li class="nav-item" style = "padding-right:240px;padding-top: 10px; "><a class="nav-link" href="#">Home</a></li>
+                
+                <li class="nav-item">
+                
+                    <form class="d-flex" style = "padding-right:250px; padding-top:10px ; color: rgb(232, 137, 43);"  >
+                        <input type="search" name="search_name" class="form-control col-sm-4" color="rgb(252, 250, 252)"  placeholder="Search news.."/>
+                        <input type="submit" name="search" value="Search" class="btn"/>
+                    </form>
+                </li>
+                <li>
+                    <div class="container">
+                        <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#login">Login</button>
+                    
+                        <div class="modal fade" id="login">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                        <form>
+                                            <h3>User login</h3>
+                                            <p></p>
+                                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            
+                                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1"><br>
+                                       
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                          </form>
+                                          </div>
+                                          <div class="col-md-6">
+                                            <form>
+                                                <h3>Admin login</h3>
+                                                <p></p>
+                                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            
+                                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1"><br>
+                                       
+                                            <button  type="submit" class="btn btn-primary" >Submit</button>
+                                          </form>
+                                          </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <button class="btn btn-secondary" routerLink="/signup">Create Account</button>
+                    </div>
+                    </li>
+
+            </ul>
+            </div>
+    </nav>
+</div>

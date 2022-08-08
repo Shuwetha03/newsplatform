@@ -1,0 +1,22 @@
+<a routerLink ="/likeForm" class="btn btn-info" type="button" >Add Like</a>
+<table border = "1" align="center">
+    <tr>
+    <th>Like id</th>
+    <th>User Id</th>
+    <th>User name</th>
+    <th>news id</th>
+    
+    </tr>
+    <tr *ngFor = "let adn of likelist">
+        <td>{{adn.likeid}}</td>
+        <td>{{adn.uid}}</td>
+        <td>{{adn.uname}}</td>
+        <td>{{adn.nid}}</td>
+        
+        
+        <td>
+            <button type="button" class="btn btn-info" (click)="updatePro(adn.likeid)">Update</button>
+            <button type="button" class="btn btn-info" (click)="deletePro(adn.likeid)">Delete</button>
+        </td>
+    </tr>
+</table>

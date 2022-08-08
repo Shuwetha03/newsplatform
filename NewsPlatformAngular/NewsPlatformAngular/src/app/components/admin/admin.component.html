@@ -1,0 +1,20 @@
+<a routerLink ="/adminForm" class="btn btn-info" type="button" >Add Admin</a>
+<table border = "1" align="center">
+    <tr>
+    <th>admin id</th>
+    <th>admin name</th>
+    <th>email</th>
+    <th>password</th>
+    </tr>
+    <tr *ngFor = "let adn of adminlist">
+        <td>{{adn.aid}}</td>
+        <td>{{adn.aname}}</td>
+        <td>{{adn.email}}</td>
+        <td>{{adn.password}}</td>
+        
+        <td>
+            <button type="button" class="btn btn-info" (click)="updatePro(adn.aid)">Update</button>
+            <button type="button" class="btn btn-info" (click)="deletePro(adn.aid)">Delete</button>
+        </td>
+    </tr>
+</table>

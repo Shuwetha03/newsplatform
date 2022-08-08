@@ -1,0 +1,20 @@
+<a routerLink ="/userForm" class="btn btn-info" type="button" >Add User</a>
+<table border = "1" align="center">
+    <tr>
+    <th>User id</th>
+    <th>User name</th>
+    <th>email</th>
+    <th>password</th>
+    </tr>
+    <tr *ngFor = "let use of userlist">
+        <td>{{use.uid}}</td>
+        <td>{{use.name}}</td>
+        <td>{{use.email}}</td>
+        <td>{{use.password}}</td>
+        
+        <td>
+            <button type="button" class="btn btn-info" (click)="updatePro(use.uid)">Update</button>
+            <button type="button" class="btn btn-info" (click)="deletePro(use.uid)">Delete</button>
+        </td>
+    </tr>
+</table>
